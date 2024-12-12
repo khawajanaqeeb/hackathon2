@@ -1,10 +1,7 @@
+
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { Poppins, Montserrat } from "next/font/google";
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 export default function Home() {
   return (
@@ -24,7 +21,7 @@ export default function Home() {
             
             <div className="flex justify-evenly">
             <div className="mt-[2%]">
-              <img src="/mg1.png" alt="dining" className="w-[381px] h-[480px] " /><h2 className="ml-[30%] mt-[1%] text-[#333333] text-2xl font-semibold">Dining</h2> 
+              <img src="/mg1.png" alt="dining" width={381} height={480} className="w-[381px] h-[480px] " /><h2 className="ml-[30%] mt-[1%] text-[#333333] text-2xl font-semibold">Dining</h2> 
             </div>
             <div className="mt-[2%]">
               <img src="/mg2.png" alt="living" className="w-[381px] h-[480px] " /><h2 className="ml-[30%] mt-[1%] text-[#333333] text-2xl font-semibold">Living</h2> 
@@ -33,13 +30,14 @@ export default function Home() {
               <img src="/mg3.png" alt="bed room" className="w-[381px] h-[480px] " /><h2 className="ml-[30%] mt-[1%] text-[#333333] text-2xl font-semibold">Bed Room</h2> 
             </div>
             </div>
-          <img src="/op.png" alt="our-product" className="w-[1236px] h-[1084px] mt-[50px] ml-[102px]"/>
-          <img src="/insp.png" alt="inspiration"  className="mt-[5%]"/>
-          <img src="/Share.png" alt="shar-image" className="mt-[5%]" />
+                  <div className="w-[1236px] h-[1084px]">
+                    <h2 className="w-[269px] h-[48px] text-[#3A3A3A] font-">Our Products</h2>
+                  
+                  </div>
           </div>
         </div>
       </div>
-      <br />
+      
       <Footer />
     </div>
   );

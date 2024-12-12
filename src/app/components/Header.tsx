@@ -1,18 +1,6 @@
 import React from "react";
 
 
-import { Poppins, Montserrat } from 'next/font/google';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '700'], 
-});
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '700'], 
-});
-
 export default function Header(){
     return(
         <div className="w-[1440px] h-[100px] bg-[##FFFFFF]">
